@@ -1,0 +1,23 @@
+{% extends '_template.html' %}
+{% block title %} Signup Page {% endblock %}
+{% block maincontent %}
+
+<form action="/sign-up" method="post" class="form-example">
+<h3>Login</h3>
+  <div class="form-example">
+    <label for="name">Email address </label>
+    <input type="email" name="email" placeholder="email@gg.com" class="form-control">
+      <label for="name">username </label>
+    <input type="text" name="username" placeholder="roboman12" class="form-control">
+      <label for="name">Enter password </label>
+    <input type="password" name="password1" placeholder="pass" class="form-control">
+       <label for="name">Enter password again </label>
+    <input type="password" name="password2" placeholder="pass" class="form-control">
+      <br>
+      <div align="center"><button class="btn btn-primary" type="submit">SignUp</button></div>
+  </div>
+</form>
+
+
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends '_template.html' %}
+{% block title %} Login Page {% endblock %}
+{% block maincontent %}
+
+<form action="/login" method="post" class="form-example">
+<h3>Login</h3>
+  <div class="form-example">
+    <label for="name">Email address </label>
+    <input type="email" name="email" placeholder="email@gg.com" class="form-control" required>
+      <label for="name">Enter password </label>
+    <input type="password" name="password" placeholder="password" class="form-control" required>
+      <br>
+      <div align="center"><button class="btn btn-primary" type="submit">Login</button></div>
+  </div>
+</form>
+
+
+
+{% endblock %}

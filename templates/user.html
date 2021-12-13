@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends "_template.html" %}
+{% block maincontent %}
+
+    <h1>Hello {{ user }}</h1>
+    {% if 'username' in session %}
+    <p>Found username in session - {{ session["username"] }}</p>
+    {% endif %}
+ {% if 'email' in session %}
+    <p>Found email in session - {{ session["email"] }}</p>
+    {% endif %}
+
+
+    <form action="#" method="post">
+        <input type="email" name="email" placeholder="Enter Email" value="{{ email if email }}">
+        <input type="submit" value="submitttt">
+    </form>
+{% endblock %}
